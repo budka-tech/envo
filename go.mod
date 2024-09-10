@@ -1,3 +1,3 @@
-module gitlab.com/standart-dev/core-envo
+module github.com/budka-tech/envo
 
 go 1.23.0

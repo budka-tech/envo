@@ -51,3 +51,13 @@ func New(value string) (*Env, error) {
 
 	return &env, nil
 }
+
+func MustNew(value string) *Env {
+	env, err := New(value)
+
+	if err != nil {
+		panic(err)
+	}
+
+	return env
+}
